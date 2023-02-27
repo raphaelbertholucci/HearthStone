@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:name="com.bertholucci.home.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/to_card_details"
+            app:destination="@id/fragment_card_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_card_details"
+        android:name="com.bertholucci.home.ui.card.CardFragment"
+        tools:layout="@layout/fragment_card_details">
+        <argument
+            android:name="name"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
