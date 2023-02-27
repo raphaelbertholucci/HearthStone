@@ -1,14 +1,15 @@
 # HearthStone
-An app that shows informations about the series that you love the most!
+An app that shows informations about cards from the game HearthStone!
 
 <p align="center">
 <img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home.webp" width="250" height="480" />
-<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/show.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/show.webp" width="250" height="480" />
-<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/episode.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/episode.webp" width="250" height="480" />
+<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home_loading.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home_loading.webp" width="250" height="480" />
+<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home_error.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/home_error.webp" width="250" height="480" />
 </p>
 
 ## Getting Started
-There is no special setup necessary to run. The app is using an open source API from [TVMaze](https://www.tvmaze.com/api) to list all tv shows from their database.
+Before you try to run this project you should go to [HearthStone API](https://rapidapi.com/omgvamp/api/hearthstone) to create your account and generate you own api key.
+  * Place your API_KEY in build.gradle.kts inside the data module.
 
 ## Multi Module Project Structure
 The multi module project structure its being used to de-couple the main app of its features.
@@ -44,8 +45,9 @@ Flow also had some advantages, like multiplatform support, nullability support, 
 To guarantee code quality, tests were implemented using JUnit with MockK for unit tests. There is an example in GetShowsByIdTest.kt and ShowRepositoryImplTest.kt.
 
 <p align="center">
-<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/search_empty.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/search_empty.webp" width="250" height="480" />
-<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/search.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/search.webp" width="250" height="480" />
+<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details.webp" width="250" height="480" />
+<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details_loading.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details_loading.webp" width="250" height="480" />
+<img src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details_error.webp" alt="" data-canonical-src="https://github.com/raphaelbertholucci/HearthStone/blob/main/readme-pictures/details_error.webp" width="250" height="480" />
 </p>
 
 ### Other libraries used:
@@ -56,8 +58,7 @@ To guarantee code quality, tests were implemented using JUnit with MockK for uni
   * :tada: The <b>Splash Screen</b> library to handle the splash on Android 12
   * :arrow_down: <b>Dependency Updates</b> to keep all dependencies up to date!
   * :monocle_face:	<b>Detekt</b> to keep our code clean and well structured
-  * :page_with_curl: <b> Paging 3.0</b> to load all shows inside a paginated list
-  * :file_folder: <b>Room</b> for local database
+  * :saxophone: <b>Espresso</b> for instrumentation tests - <b>CardFragmentTest</b> class
   * :boat: <b>Navigation</b> of Jetpack Components to navigate between Fragments
 
 ## License
