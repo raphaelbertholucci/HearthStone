@@ -6,7 +6,7 @@ import io.mockk.coEvery
 import io.mockk.impl.annotations.RelaxedMockK
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.test.runBlockingTest
+import kotlinx.coroutines.test.runTest
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -21,7 +21,7 @@ class GetShowsByIdTest : BaseTest<GetCardByName>() {
     }
 
     @Test
-    fun `get card by name`() = runBlockingTest {
+    fun `get card by name`() = runTest {
         coEvery { repository.getCardByName(any()) } returns flow {
             emit(mock)
         }
@@ -37,6 +37,7 @@ class GetShowsByIdTest : BaseTest<GetCardByName>() {
 }
 
 val mock = Card(
+    id = "1234",
     name = "Blessing of Kings",
     image = "image",
     flavor = "Given the number of kings who have been assassinated, are you sure you want their blessing?",
@@ -45,7 +46,7 @@ val mock = Card(
     type = "Spell",
     rarity = "Free",
     faction = "Neutral",
-    cost = 4,
-    attack = 10,
-    health = 20
+    cost = "4",
+    attack = "10",
+    health = "20"
 )

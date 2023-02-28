@@ -11,7 +11,6 @@
     <dimen name="large_margin">64dp</dimen>
 
     <!--    FONT SIZE-->
-    <dimen name="small_text">14sp</dimen>
     <dimen name="medium_text">16sp</dimen>
     <dimen name="large_text">18sp</dimen>
     <dimen name="big_text">24sp</dimen>
@@ -29,6 +28,4 @@
     <dimen name="show_shadow_height">80dp</dimen>
     <dimen name="show_poster_width">130dp</dimen>
     <dimen name="show_poster_height">190dp</dimen>
-    <dimen name="show_episode_poster_width">100dp</dimen>
-    <dimen name="show_episode_poster_height">70dp</dimen>
 </resources>

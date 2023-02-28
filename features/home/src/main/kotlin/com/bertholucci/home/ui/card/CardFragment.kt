@@ -13,7 +13,6 @@ import com.bertholucci.domain.helper.fold
 import com.bertholucci.domain.model.Card
 import com.bertholucci.home.databinding.FragmentCardDetailsBinding
 import com.bertholucci.home.extensions.loadFromUrl
-import com.bertholucci.home.extensions.navProvider
 import com.bertholucci.home.extensions.onBackPressed
 import com.bertholucci.home.extensions.setValueIfNotEmpty
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -21,7 +20,6 @@ import org.koin.core.parameter.parametersOf
 
 class CardFragment : Fragment() {
 
-    private val navController by navProvider()
     private val args: CardFragmentArgs by navArgs()
 
     private val viewModel: CardViewModel by viewModel {
