@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.bertholucci.domain.helper.fold
 import com.bertholucci.domain.model.Card
-import com.bertholucci.home.databinding.FragmentCardDetailsBinding
+import com.bertholucci.home.databinding.FragmentCardBinding
 import com.bertholucci.home.extensions.loadFromUrl
 import com.bertholucci.home.extensions.onBackPressed
 import com.bertholucci.home.extensions.setValueIfNotEmpty
@@ -27,7 +27,7 @@ class CardFragment : Fragment() {
     }
 
     private val binding by lazy {
-        FragmentCardDetailsBinding.inflate(layoutInflater)
+        FragmentCardBinding.inflate(layoutInflater)
     }
 
     override fun onCreateView(

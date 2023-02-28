@@ -32,7 +32,7 @@ class CardsRepositoryImplTest : BaseTest<CardsRepositoryImpl>() {
 
 val response = listOf(
     CardResponse(
-        id = "1234",
+        id = "RLK_Prologue_CS2_092e",
         name = "Blessing of Kings",
         image = "image",
         flavor = "Given the number of kings who have been assassinated, are you sure you want their blessing?",

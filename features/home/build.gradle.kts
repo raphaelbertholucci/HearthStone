@@ -48,7 +48,7 @@ dependencies {
     testImplementation(TestDependencies.coroutines_test)
     testImplementation(TestDependencies.arch)
 
-    androidTestImplementation(TestDependencies.espresso)
+    api(TestDependencies.espresso)
     androidTestImplementation(TestDependencies.junit_instrumentation)
     androidTestImplementation(TestDependencies.mockk_android)
     androidTestImplementation(TestDependencies.test_core)

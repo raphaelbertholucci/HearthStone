@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/fragment_card_details"
         android:name="com.bertholucci.home.ui.card.CardFragment"
-        tools:layout="@layout/fragment_card_details">
+        tools:layout="@layout/fragment_card">
         <argument
             android:name="name"
             app:argType="string" />
