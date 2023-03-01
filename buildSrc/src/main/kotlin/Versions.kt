@@ -45,7 +45,7 @@ object TestVersions {
     const val junit_instrumentation = "1.1.5"
     const val mockk = "1.13.4"
     const val coroutines_test = "1.6.4"
-    const val arch = "2.2.0"
+    const val arch = "2.1.0"
     const val espresso = "3.5.1"
     const val test_core = "1.5.0"
     const val fragment_version = "1.5.5"
