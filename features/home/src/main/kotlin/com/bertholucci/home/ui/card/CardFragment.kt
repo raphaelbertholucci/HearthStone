@@ -73,7 +73,7 @@ class CardFragment : Fragment() {
     }
 
     private fun handleError(throwable: Throwable) {
-        Log.d("ERROR", throwable.message ?: "Error encountered on displaying the show!")
+        Log.d("ERROR", throwable.message ?: "Error encountered on displaying the card!")
         display(error = true)
     }
 

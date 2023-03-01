@@ -20,7 +20,7 @@ class CardsRepositoryImpl(
 
     override fun getCardByName(name: String): Flow<Card> {
         return flow {
-            emit(CardMapper.mapToDomain(api.getShowByName(name).first()))
+            emit(CardMapper.mapToDomain(api.getCardByName(name).first()))
         }
     }
 }

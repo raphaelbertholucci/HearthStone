@@ -11,7 +11,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 
 @ExperimentalCoroutinesApi
-class GetShowsByIdTest : BaseTest<GetCardByName>() {
+class GetCardsByNameTest : BaseTest<GetCardByName>() {
 
     @RelaxedMockK
     private lateinit var repository: CardsRepository

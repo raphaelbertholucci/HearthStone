@@ -11,5 +11,5 @@ interface HearthStoneApi {
     suspend fun getCards(): CardsResponse
 
     @GET("cards/{name}")
-    suspend fun getShowByName(@Path("name") name: String): List<CardResponse>
+    suspend fun getCardByName(@Path("name") name: String): List<CardResponse>
 }

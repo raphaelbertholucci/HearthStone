@@ -22,7 +22,7 @@ class CardsRepositoryImplTest : BaseTest<CardsRepositoryImpl>() {
 
     @Test
     fun `get card based on the name passed`() = runTest {
-        coEvery { api.getShowByName(any()) } returns response
+        coEvery { api.getCardByName(any()) } returns response
 
         agent.getCardByName("Blessing").collect {
             assertEquals(CardMapper.mapToDomain(response.first()), it)

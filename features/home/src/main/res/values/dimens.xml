@@ -24,8 +24,8 @@
     <dimen name="item_card_height">105dp</dimen>
 
     <!--    SHOW SCREEN-->
-    <dimen name="show_img_background_height">300dp</dimen>
-    <dimen name="show_shadow_height">80dp</dimen>
-    <dimen name="show_poster_width">130dp</dimen>
-    <dimen name="show_poster_height">190dp</dimen>
+    <dimen name="card_img_background_height">300dp</dimen>
+    <dimen name="card_shadow_height">80dp</dimen>
+    <dimen name="card_poster_width">130dp</dimen>
+    <dimen name="card_poster_height">190dp</dimen>
 </resources>

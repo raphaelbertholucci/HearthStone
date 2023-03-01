@@ -13,8 +13,8 @@
         <View
             android:id="@+id/view_poster"
             style="@style/Shimmer"
-            android:layout_width="@dimen/show_poster_width"
-            android:layout_height="@dimen/show_poster_height"
+            android:layout_width="@dimen/card_poster_width"
+            android:layout_height="@dimen/card_poster_height"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
